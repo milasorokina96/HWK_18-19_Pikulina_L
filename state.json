@@ -1,0 +1,4 @@
+{
+  "statuses": ["Open", "In progress", "Done"],
+  "priorities": ["High", "Medium", "Low"]
+}

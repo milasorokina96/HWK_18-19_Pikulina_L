@@ -1,0 +1,1 @@
+This program helps to create, edit and delete tasks. Here you can also set statuses and priority for tasks. The code is written in ES6 and contains a dist folder with the converted code to an earlier version of js for older browsers.
