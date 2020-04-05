@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.invisible {
+  display: none;
+}
+.add__block {
+  margin-bottom: 10px;
+  & > button {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #000000;
+    background-color: #FFA07A;
+  }
+}
+.table__info {
+  border: 1px solid #000000;
+}
+td {
+  padding: 10px;
+  &:last-child {
+    padding: 0px;
+  }
+  & > button {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #000000;
+    margin: 10px;
+    background-color: #FFA07A;
+  }
+}
+
+.card {
+  margin-top: 10px;
+  width: 330px;
+  border: 1px solid #000000;
+  background-color: #FFA07A;
+  padding: 10px 20px 10px 20px;
+  &__form > div {
+    margin-bottom: 10px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.error {
+  position: absolute;
+  color: #D71E02;
+  font-size: 9px;
+}
+button {
+  cursor: pointer;
+}
