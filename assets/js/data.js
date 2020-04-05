@@ -1,4 +1,3 @@
-'use strict';
 let statuses = [];
 let priorities = [];
 

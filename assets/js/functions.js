@@ -71,7 +71,7 @@ let showViewCard = () => {
 };
 
 let creatCardForEdit = (index) => {
-    const form = document.getElementById('cardForm')
+    const form = document.getElementById('cardForm');
     form.innerHTML = '';
     $('#card').show();
     if (typeof index === 'object') {
@@ -196,7 +196,7 @@ let consentForRemove = (b) => {
             toDoList();
             pushToLocalStorage();
             $('#modalWindow').modal('hide');
-        }
+        };
     })(b);
 };
 
