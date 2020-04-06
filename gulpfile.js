@@ -54,7 +54,3 @@ gulp.task('deleteBuild', () => {
 });
 
 gulp.task('build', gulp.series('deleteBuild', gulp.parallel('buildJS', 'buildCSS', 'move'), 'browser-sync'));
-
-
-
-
