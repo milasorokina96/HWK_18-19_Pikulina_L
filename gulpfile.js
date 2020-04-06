@@ -53,15 +53,7 @@ gulp.task('deleteBuild', () => {
     return del('./build');
 });
 
-const install = require("gulp-install");
-
-gulp.task('depInstall', () => {
-    return gulp.src('./package.json')
-        .pipe(gulp.dest("./build"))
-        .pipe(install());
-});
-
-gulp.task('build', gulp.series('deleteBuild', gulp.parallel('depInstall', 'buildJS', 'buildCSS', 'move'), 'browser-sync'));
+gulp.task('build', gulp.series('deleteBuild', gulp.parallel('buildJS', 'buildCSS', 'move'), 'browser-sync'));
 
 
 
