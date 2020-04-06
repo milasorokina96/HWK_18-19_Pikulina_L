@@ -42,7 +42,12 @@ gulp.task('move', () => {
 gulp.task('browser-sync', () => {
     browserSync.init({
         watch: true,
-        server: "./build"
+        server: {
+            baseDir: ["build"],
+            routes:{
+                "/node_modules": "node_modules"
+            }
+        }
     });
     watch('./assets/js/*.js', 'buildJS');
     watch('./assets/style/*.scss', 'buildCSS');
